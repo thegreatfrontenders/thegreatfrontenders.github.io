@@ -28,9 +28,10 @@ This guide is designed to help you reinforce core JavaScript skills by reimpleme
 - Handle loading, success, and error states.
 - Store the data in a usable array format for testing your custom methods.
 
-API Endpoint:
+API Endpoint & Documentation:
 
 ```
+https://www.freepublicapis.com/one-piece-api
 https://api.api-onepiece.com/v2/characters/en
 ```
 
@@ -91,3 +92,9 @@ After implementing each method:
 - What edge cases did you need to handle?
 - How does your method compare to the native one?
 - What do you now better understand about how JavaScript handles iteration and callbacks?
+
+# Stories: 
+
+- as a user I can see information about my favorite one piece characters 
+- as a user I can play a game to guess the devil fruit of a random character 
+- as a user I can .....

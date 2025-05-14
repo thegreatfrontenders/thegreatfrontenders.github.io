@@ -6,10 +6,13 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { BrowserRouter as Router, Routes, Route } from 'react-router';
+import Characters from './components/Characters';
 
 
 function App() {
   return (
+    <Router>
     <div className="App">
       <Navbar expand="lg" className="bg-body-tertiary">
         <Container>
@@ -45,9 +48,13 @@ function App() {
           Learn React With The Straw Hats
         </a>
       </header>
+      <Routes>
+        <Route path='/' element={<Characters />} />
+      </Routes>
 
 
     </div>
+    </Router>
   );
 }
 

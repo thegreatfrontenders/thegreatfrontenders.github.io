@@ -8,6 +8,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { BrowserRouter as Router, Routes, Route } from 'react-router';
 import Characters from './components/Characters';
+import DevilFruitFinder from './components/DevilFruitFinder/DevilFruitFinder';
 
 
 function App() {
@@ -41,7 +42,7 @@ function App() {
         <img src='straw-hat-logo.png' className="App-logo" alt="logo" />
         <a
           className="App-link"
-          href="https://www.freepublicapis.com/one-piece-api"
+          href="https://api-onepiece.com/en/documentation?ref=freepublicapis.com"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -51,7 +52,6 @@ function App() {
       <Routes>
         <Route path='/' element={<Characters />} />
       </Routes>
-
 
     </div>
     </Router>

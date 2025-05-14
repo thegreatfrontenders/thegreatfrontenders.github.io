@@ -22,7 +22,7 @@ function App() {
               <Nav.Link as={Link} to={"/"}>Home</Nav.Link>
               <Nav.Link as={Link} to={"/characters"}>Characters</Nav.Link>
               <NavDropdown title="Games" id="basic-nav-dropdown">
-                <NavDropdown.Item as={Link} to={"/devilFruit"}>Devil Fruit Finder</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to={"/fruitFinder"}>Devil Fruit Finder</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
                   Another action
                 </NavDropdown.Item>
@@ -39,7 +39,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/characters' element={<Characters />} />
-        <Route path='/devilFruit' element={<DevilFruitFinder />} />
+        <Route path='/fruitFinder' element={<DevilFruitFinder />} />
       </Routes>
 
     </div>

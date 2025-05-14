@@ -114,3 +114,8 @@ After implementing each method:
     - can have funny rankings (ie if you get less than 2 right youre a fake fan)
 
 - this should pull onload and store first x characters and fruits in localstorage 
+
+# Learning
+- Our website.io was showing our readme which is a fallback option of index.html when something isn't working properly
+- I added npm install gh-pages and also "predeploy": "npm run build",
+  "deploy": "gh-pages -d build" into our scripts

@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'OnePiece';
+  src: local('OnePiece'), url('./assets/fonts/one-piece-font.ttf') format('truetype');
+}
+
+.onePieceHeader { 
+  font-family: 'OnePiece';
+  font-style: bold;
+  font-size: 100px;
+}

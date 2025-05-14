@@ -31,7 +31,7 @@ This guide is designed to help you reinforce core JavaScript skills by reimpleme
 API Endpoint & Documentation:
 
 ```
-https://www.freepublicapis.com/one-piece-api
+https://api-onepiece.com/en/documentation?ref=freepublicapis.com
 https://api.api-onepiece.com/v2/characters/en
 ```
 
@@ -93,8 +93,24 @@ After implementing each method:
 - How does your method compare to the native one?
 - What do you now better understand about how JavaScript handles iteration and callbacks?
 
-# Stories: 
+# Stories. (As a user...)
 
-- as a user I can see information about my favorite one piece characters 
-- as a user I can play a game to guess the devil fruit of a random character 
-- as a user I can .....
+- when i first open the app, i see information about the main strawhats 
+- I can see information about my favorite one piece characters by search 
+    - Note ! we should use **debouncing** for this to make sure that we dont oversearch 
+- I can play a game to guess the devil fruit of a random character 
+- I can .....
+
+
+# Tech Specs / components
+
+- navbar (no login)
+- home
+    - straw hats 
+    - search bar to find more about other people
+- devil fruit guesser game
+    - get all fruits here https://api.api-onepiece.com/v2/fruits/en
+    - randomly select 10 characters and then make multiple choice of 5 fruits inlcuding their fruit 
+    - can have funny rankings (ie if you get less than 2 right youre a fake fan)
+
+- this should pull onload and store first x characters and fruits in localstorage 

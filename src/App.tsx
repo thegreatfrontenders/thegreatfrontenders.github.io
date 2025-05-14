@@ -8,7 +8,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Characters from './components/Characters';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'; //Issue was we had react-router not react-router-dom
 
 
 function App() {

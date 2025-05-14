@@ -5,7 +5,7 @@ const Characters = () => {
 
     return (
         <div>
-
+            <h2>GANG SHIT</h2>
         </div>
     )
 };

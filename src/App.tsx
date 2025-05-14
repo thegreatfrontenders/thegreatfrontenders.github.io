@@ -1,14 +1,13 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import { BrowserRouter as Router, Routes, Route } from 'react-router';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Characters from './components/Characters';
 import DevilFruitFinder from './components/DevilFruitFinder/DevilFruitFinder';
+import Home from './components/Home';
 
 
 function App() {
@@ -22,7 +21,7 @@ function App() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#link">Characters</Nav.Link>
+              <Nav.Link as={Link} to={"/characters"}>Characters</Nav.Link>
               <NavDropdown title="Games" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Devil Fruit Finder</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
@@ -50,7 +49,7 @@ function App() {
         </a>
       </header>
       <Routes>
-        <Route path='/' element={<Characters />} />
+        <Route path='/characters' element={<Characters />} />
       </Routes>
 
     </div>

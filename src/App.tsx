@@ -1,14 +1,13 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Characters from './components/Characters';
-import { Link } from 'react-router-dom'; //Issue was we had react-router not react-router-dom
+import DevilFruitFinder from './components/DevilFruitFinder/DevilFruitFinder';
+import Home from './components/Home';
 
 
 function App() {
@@ -42,7 +41,7 @@ function App() {
         <img src='straw-hat-logo.png' className="App-logo" alt="logo" />
         <a
           className="App-link"
-          href="https://www.freepublicapis.com/one-piece-api"
+          href="https://api-onepiece.com/en/documentation?ref=freepublicapis.com"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -52,7 +51,6 @@ function App() {
       <Routes>
         <Route path='/characters' element={<Characters />} />
       </Routes>
-
 
     </div>
     </Router>

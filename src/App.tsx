@@ -9,7 +9,6 @@ import Characters from './components/Characters';
 import DevilFruitFinder from './components/DevilFruitFinder/DevilFruitFinder';
 import Home from './components/Home';
 
-
 function App() {
   return (
     <Router>
@@ -20,10 +19,10 @@ function App() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
+              <Nav.Link as={Link} to={"/"}>Home</Nav.Link>
               <Nav.Link as={Link} to={"/characters"}>Characters</Nav.Link>
               <NavDropdown title="Games" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Devil Fruit Finder</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to={"/devilFruit"}>Devil Fruit Finder</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
                   Another action
                 </NavDropdown.Item>
@@ -37,19 +36,10 @@ function App() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <header className="App-header">
-        <img src='straw-hat-logo.png' className="App-logo" alt="logo" />
-        <a
-          className="App-link"
-          href="https://api-onepiece.com/en/documentation?ref=freepublicapis.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React With The Straw Hats
-        </a>
-      </header>
       <Routes>
+        <Route path='/' element={<Home />} />
         <Route path='/characters' element={<Characters />} />
+        <Route path='/devilFruit' element={<DevilFruitFinder />} />
       </Routes>
 
     </div>

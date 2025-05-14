@@ -9,7 +9,7 @@ const DevilFruitFinder: FC<DevilFruitFinderProps> = () => {
 
   return (
     <div className={styles.DevilFruitFinder} data-testid="DevilFruitFinder">
-
+      testing routing
     </div>
   );
 }

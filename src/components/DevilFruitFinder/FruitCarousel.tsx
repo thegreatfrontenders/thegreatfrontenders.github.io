@@ -39,7 +39,7 @@ function FruitCarousel(props: { fruits: DevilFruit[] }) {
                 ))}
             </Splide>
         </div>
-        <Button variant="danger"><span className="onePieceHeader">Let's Play (guessing game coming soon)</span></Button>
+        <Button variant="danger">Let's Play (guessing game coming soon)</Button>
     </div>
 };
 

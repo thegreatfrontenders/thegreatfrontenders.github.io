@@ -5,7 +5,8 @@ import { DFFQuizOpiton } from '../DevilFruitFinder';
 
 function DFFImageCard (props: {
     fruit: DevilFruit,
-    options: DFFQuizOpiton[] 
+    options: DFFQuizOpiton[], 
+    onClick: any
 }) {
   return (
     <Card style={{ width: '18rem' }}>
@@ -16,8 +17,9 @@ function DFFImageCard (props: {
           <i>{props.fruit.roman_name}</i> <br/>
          {props.fruit.description.split('.')[0]}
         </Card.Text>
-        {props.options.map((option)=> (
-           <Button variant="secondary outline-warning" size="lg">{option.character}</Button>
+        {props.options.map((option, index)=> (
+           <Button variant="secondary outline-warning" size="lg" key={index}
+            onClick={props.onClick(option)}>{option.character}</Button>
         ))}
        
       </Card.Body>

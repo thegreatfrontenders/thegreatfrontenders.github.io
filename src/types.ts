@@ -1,10 +1,20 @@
-export interface DevilFruit {
+export interface DevilFruitREST {
   id: number
   name: string
   description: string
   roman_name: string
   type: string // make type later
   filename: string
+}
+
+export interface DevilFruit {
+  avatarSrc: string
+  currentOwner: string
+  description: string
+  englishName: string
+  id: number
+  meaning: string
+  type: string
 }
 
 export interface Character {
@@ -16,5 +26,3 @@ export interface Character {
   bounty: string
   job?: string
 }
-
-

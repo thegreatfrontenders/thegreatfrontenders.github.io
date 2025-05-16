@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 
 import Button from 'react-bootstrap/Button';
-import { DevilFruit } from "../../types";
+import { DevilFruitREST as DevilFruit } from "../../types";
 
 // Splide carousel configuration options; learned about this from https://levelup.gitconnected.com/implementing-an-infinite-autoplay-carousel-in-react-with-splide-cac6355ba435
 const splideOptions = {

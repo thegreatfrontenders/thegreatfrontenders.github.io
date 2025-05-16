@@ -3,14 +3,25 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { ApolloProvider } from '@apollo/client';
+/* 
+ * Once you've set up the Provider and client within your App component, you can use all 
+ * of the different React hooks that Apollo Client gives you for all the different GraphQL 
+ * operations. These include queries, mutations, and subscriptions. You can even use the 
+ * created Apollo Client directly using a custom hook called useApolloClient.
+ */
 
+import { apolloClient } from './services/graphql/apolloClient';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
 root.render(
   <React.StrictMode>
-    <App />
+    <ApolloProvider client={apolloClient}>
+      <App />
+    </ApolloProvider>,
   </React.StrictMode>
 );
 

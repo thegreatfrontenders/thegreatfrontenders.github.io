@@ -6,7 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Characters from './components/Characters';
-import DevilFruitFinder from './components/DevilFruitFinder/DevilFruitFinder';
+import DevilFruitFinder from './components/DevilFruitFinder(deprecated)/DevilFruitFinder';
 import Home from './components/Home';
 
 function App() {

@@ -99,7 +99,7 @@ After implementing each method:
 - I can see information about my favorite one piece characters by search 
     - Note ! we should use **debouncing** for this to make sure that we dont oversearch 
 - I can play a game to guess the devil fruit of a random character 
-- I can .....
+- I can choose an accessibly friendly UI 
 
 
 # Tech Specs / components

@@ -1,10 +1,11 @@
-import { ApolloClient, InMemoryCache } from '@apollo/client';
+import { ApolloClient, InMemoryCache, HttpLink } from '@apollo/client';
 
 export const apolloClient = new ApolloClient({
-  uri: 'https://onepieceql.up.railway.app/graphql',
-  cache: new InMemoryCache(), // is an instance of InMemoryCache, which Apollo Client uses to cache query results after fetching them.
+  link: new HttpLink({
+    uri: '/.netlify/functions/graphql', // 👈 Netlify Function endpoint
+  }),
+  cache: new InMemoryCache(),
 });
-
 /** 
  * Notes on Apollo
  * 

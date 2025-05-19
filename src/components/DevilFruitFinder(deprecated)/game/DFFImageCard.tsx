@@ -1,6 +1,6 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import { DevilFruit } from '../../../types';
+import { DevilFruitREST as DevilFruit } from '../../../types';
 import { DFFQuizOpiton } from '../DevilFruitFinder';
 
 function DFFImageCard (props: {

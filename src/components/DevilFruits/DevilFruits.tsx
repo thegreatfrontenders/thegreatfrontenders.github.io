@@ -1,12 +1,21 @@
-import React, { FC } from 'react';
-import styles from './DevilFruits.module.css';
+import React, { useState, useEffect } from 'react';
+import { DevilFruit } from '../../types';
+import DFCarousel from './DFCarousel';
 
 interface DevilFruitsProps {}
 
-const DevilFruits: FC<DevilFruitsProps> = () => (
-  <div className={styles.DevilFruits} data-testid="DevilFruits">
+function DevilFruits () {
+  const [fruits, setFruits] = useState<DevilFruit[]>([]);
+
+  useEffect(() => {
+    
+  })
+
+  return (
+  <div>
     DevilFruits Component
-  </div>
-);
+    <DFCarousel />
+  </div>);
+};
 
 export default DevilFruits;

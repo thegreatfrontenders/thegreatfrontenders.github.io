@@ -6,8 +6,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Characters from './components/Characters';
-import DevilFruitFinder from './components/DevilFruitFinder(deprecated)/DevilFruitFinder';
 import Home from './components/Home';
+import DevilFruits from './components/DevilFruits/DevilFruits';
 
 function App() {
   return (
@@ -39,7 +39,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/characters' element={<Characters />} />
-        <Route path='/fruitFinder' element={<DevilFruitFinder />} />
+        <Route path='/fruitFinder' element={<DevilFruits />} />
       </Routes>
 
     </div>

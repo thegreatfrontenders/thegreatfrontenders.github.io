@@ -5,6 +5,9 @@
   "private": true,
   "dependencies": {
     "@apollo/client": "^3.13.8",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/material": "^7.1.0",
     "@reduxjs/toolkit": "^2.8.2",
     "@splidejs/react-splide": "^0.7.12",
     "@splidejs/splide-extension-auto-scroll": "^0.5.3",

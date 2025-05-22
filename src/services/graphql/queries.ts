@@ -1,4 +1,4 @@
-import { gql } from "@apollo/client";
+import { gql } from '@apollo/client'
 
 export const GET_DEVIL_FRUITS = gql`
   query GetDevilFruits($page: Int!) {
@@ -19,15 +19,34 @@ export const GET_DEVIL_FRUITS = gql`
       }
     }
   }
-`;
+`
 
+// doesnt paginate
+export const GET_CHARACTERS = gql`
+  query GetAllCharacters($page: Int!) {
+    characters(page: $page) {
+      info {
+        count
+        pages
+        next
+        prev
+      }
+      results {
+        affiliations
+        avatarSrc
+        description
+        devilFruitName
+        englishName
+        id
+        origin
+      }
+    }
+  }
+`
 
-
-
-
-/** 
- * I chose Apollo Client as the core data layer because the app is GraphQL-native. It gives me normalized 
- * caching, pagination, query management, and devtools without extra work. For local app state like game 
- * progress or UI toggles, I planned to use Redux or context, but only where it adds clarity. I want 
+/**
+ * I chose Apollo Client as the core data layer because the app is GraphQL-native. It gives me normalized
+ * caching, pagination, query management, and devtools without extra work. For local app state like game
+ * progress or UI toggles, I planned to use Redux or context, but only where it adds clarity. I want
  * to avoid premature optimization.
  */
